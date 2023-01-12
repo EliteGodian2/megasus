@@ -100,14 +100,12 @@ window.addEventListener('load', () => {
     var yyyy = today.getFullYear()
     today = mm + '/' + dd + '/' + yyyy
     var time = h + "<span style='opacity:100%;' class='clockColon'>:</span>" + m
-    document.getElementById('digitalClock').innerHTML =
-      getDayName(today, 'us-US') + ', ' + time + ' ' + session + '.'
+    
 
     return time
   }
   // initialize the time function
 
-  displayTime()
 
   // Link evaluation
   // This functions' purpose is to check a string of text (the argument)
