@@ -14,6 +14,7 @@
   "
 >
   <head>
+    
     <title>Solar Electronics</title>
     <!-- MetaData -->
     <meta name="title" content="NebulaWEB" />
@@ -34,6 +35,8 @@
     <!-- Stylesheets -->
     <script src="resources/nebulamain.js"></script>
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Embed -->
     <meta name="theme-color" content="#eb6f92" />
     <meta property="og:title" content="Nebula" />
@@ -83,55 +86,26 @@
         <br />
       </div>
     </div>
-    <div id="navbar">
+    <div id="navbar" class="navbar navbar-light bg-light">
       <h1 class="nebHeader">Solar Electronics</h1>
       <ul>
         <li id="digitalCLOContainerLI">
           <h2></h2>
         </li>
-          <li>
+          <li class="btn btn-secondary">
             <a
               id="gamesRadon"
               class="a-navbutton"
               href="#"
               onclick='link("https://radon.games/")'
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-                style="width: 23px"
-              >
-                <path
-                  style="fill: #ffffff00"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
-                />
-              </svg>
-              <p style="color:black;">&nbsp;Explore</p>
+              
+              <p style="color:black;" >&nbsp;Explore</p>
             </a>
           </li>
-          <li>
+          <li class="btn btn-secondary">
             <a class="a-navbutton" href="options">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-                style="width: 23px"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5"
-                />
-              </svg>
+              
               <p style="color:black;">&nbsp;Contact Us &nbsp;</p>
             </a>
           </li>
@@ -212,9 +186,9 @@
     </div>
     <hr>
     <div id="content">
-      <form class="url" action="" method="POST" id="unblocker-form">
+      <form class="form-inline" action="" method="POST" id="unblocker-form">
         <input
-          class="omnibox"
+          class="form-control mr-sm-2"
           type="text"
           id="url"
           name="url"
