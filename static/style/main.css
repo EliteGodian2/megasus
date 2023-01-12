@@ -38,6 +38,7 @@
   right: 0;
   background-color: white;
   border-bottom: 5px;
+  color: black;
 }
 
 .sidenav-btn {
@@ -317,11 +318,11 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
-  background-image: url('https://cdn.glitch.global/96629152-35b3-4e20-87d3-03d751f28b4a/backgroundsolar.png?v=1673467634237') no-repeat center center fixed; 
+  background-image: url('https://cdn.glitch.global/96629152-35b3-4e20-87d3-03d751f28b4a/backgroundsolar.png?v=1673467634237') no-repeat center;  
 }
 
 body {
-  background-image: url('https://cdn.glitch.global/96629152-35b3-4e20-87d3-03d751f28b4a/backgroundsolar.png?v=1673467634237') no-repeat center center fixed; 
+  background-image: url('https://cdn.glitch.global/96629152-35b3-4e20-87d3-03d751f28b4a/backgroundsolar.png?v=1673467634237') no-repeat center; 
   color: var(--text-color-primary);
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
