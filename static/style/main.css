@@ -11,7 +11,7 @@
   --navbar-link-color: #e0def4;
   --navbar-font: "Roboto";
   --input-text-color: #e0def4;
-  --input-placeholder-color: white;sss
+  --input-placeholder-color: white;
   --navbar-logo-filter: none;
 }
 
@@ -25,7 +25,7 @@
 }
 
 #navbar {
-  height: var(--navbar-height);
+  height: 2px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -107,11 +107,6 @@
   }
 }
 
-a {
-  color: var(--navbar-link-color);
-  text-decoration: none !important;
-  font-family: "Roboto";
-}
 
 a:hover {
   color: grey;
@@ -235,7 +230,6 @@ ul li ul:hover {
   border-style: solid !important;
   border: var(--input-border-size) solid var(--input-border-color);
   border-width: 1px;
-  border-radius: 15px;
   background-color: var(--input-background-color);
   color: var(--input-text-color);
   width: 300px;
