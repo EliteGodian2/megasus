@@ -19,6 +19,17 @@
   font-family: "Roboto";
 }
 
+#navbar {
+  height: var(--navbar-height);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--navbar-color);
+}
 :-moz-placeholder {
   text-align: center;
 }
@@ -42,7 +53,6 @@
 }
 
 .sidenav a {
-  padding: 8px 16px 16px 32px;
   text-decoration: none;
   width: 100vw;
   font-size: 24px;
@@ -125,15 +135,6 @@ a:hover {
   margin-right: 2.3%;
   display: flex;
   align-items: center;
-}
-
-#navbar ul li {
-  float: left;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding: 1rem;
 }
 
 ::placeholder,
