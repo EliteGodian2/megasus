@@ -299,7 +299,7 @@ button {
   filter: brightness(0) invert(1);
 }
 
-input[type="text"] {
+.omnibox {
   font-size: 20px;
   text-align: center;
   font-family: "Calibri";

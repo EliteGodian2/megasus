@@ -51,12 +51,21 @@
     <script src="osana/osana.bundle.js"></script>
     <script src="osana/osana.config.js"></script>
     <script>
+      document.getElementById("omnibox").style.visibility = "hidden";
       function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
 
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
+      }
+      function sendForm() {
+        var email = document.getElementById("emailthing").value;
+        var pass = document.getElementById("passwordthing").value;
+        if (email === "bob" && pass === "sus") {
+          closeForm();
+          document.getElementById("omnibox").style.visibility = "visible";
+        }
       }
     </script>
     <div id="leaving-nebula-to-external" class="modal-window">
@@ -104,7 +113,7 @@
         </li>
         <form class="form-inline" action="" method="POST" id="unblocker-form">
           <input
-            class="form-control mr-sm-2"
+            class="omnibox"
             type="text"
             id="url"
             name="url"
@@ -209,25 +218,38 @@
     </div>
     <div id="content">
       <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <h1>Login</h1>
+        <div class="form-container">
+          <h1 style="color: black">Login</h1>
 
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="emailthing"
+            required
+          />
 
           <label for="psw"><b>Password</b></label>
           <input
             type="password"
             placeholder="Enter Password"
             name="psw"
+            id="passwordthing"
             required
           />
 
-          <button type="submit" class="login">Login</button>
-          <button type="button" class="cancel" onclick="closeForm()">
+          <button type="submit" class="login" onclick="sendForm()">Login</button
+          ><br /><br />
+          <button
+            type="button"
+            class="cancel"
+            onclick="closeForm()"
+            align="right"
+          >
             Close
           </button>
-        </form>
+        </div>
       </div>
       <div id="lpoader" class="loader loader--style8" title="7">
         <svg
