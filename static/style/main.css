@@ -211,7 +211,15 @@ ul li ul:hover {
 	flex-direction: column;
 	font-family: 'Roboto';
 }
-
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  cursor: pointer;
+}
 #content h1 {
 	padding-bottom: 0.5em;
 	font-weight: 100;
@@ -234,7 +242,7 @@ input[type="text"] {
 	background-color: var(--input-background-color);
 	color: black;
 	width: 300px;
-	height: 50px;
+	height: 31px;
 	box-shadow: none !important;
 	outline: none;
 	text-align: center;
