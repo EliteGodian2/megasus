@@ -93,16 +93,27 @@
         <li id="digitalCLOContainerLI">
           <h2></h2>
         </li>
-        <li class="btn btn-secondary">
+        <form class="form-inline" action="" method="POST" id="unblocker-form">
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          id="url"
+          name="url"
+          autocomplete="off"
+          placeholder="Explore the web freely"
+        />
+      </form>
+        <li class="a-navbutton">
           <a
             id="gamesRadon"
             href="#"
             onclick='link("https://radon.games/")'
+             class="a-navbutton"
           >
             <p style="color: black;">Explore</p>
           </a>
         </li>
-        <li class="btn btn-secondary">
+        <li class="a-navbutton">
           <a  href="options">
             <p style="color: black">&nbsp;Contact Us &nbsp;</p>
           </a>
@@ -185,16 +196,7 @@
       </a>
     </div>
     <div id="content">
-      <form class="form-inline" action="" method="POST" id="unblocker-form">
-        <input
-          class="form-control mr-sm-2"
-          type="text"
-          id="url"
-          name="url"
-          autocomplete="off"
-          placeholder="Explore the web freely"
-        />
-      </form>
+      
       <div id="lpoader" class="loader loader--style8" title="7">
         <svg
           version="1.1"

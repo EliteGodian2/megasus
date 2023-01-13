@@ -290,17 +290,19 @@ svg rect {
 	}
 }
 
-.nebHeader {
-	font-family: var(--navbar-font);
-	color: var(--navbar-text-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	margin-left: .5%;
 
+.nebHeader {
+  font-family: var(--navbar-font);
+  background: -webkit-linear-gradient(#ff0000, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-left: 0.5%;
 }
 
 html,
