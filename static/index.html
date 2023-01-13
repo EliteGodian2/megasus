@@ -50,6 +50,15 @@
     <script src="uv/uv.config.js"></script>
     <script src="osana/osana.bundle.js"></script>
     <script src="osana/osana.config.js"></script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <div id="leaving-nebula-to-external" class="modal-window">
       <div>
         <a href="#" title="Close" class="modal-close">Close</a>
@@ -94,39 +103,37 @@
           <h2></h2>
         </li>
         <form class="form-inline" action="" method="POST" id="unblocker-form">
-        <input
-          class="form-control mr-sm-2"
-          type="text"
-          id="url"
-          name="url"
-          autocomplete="off"
-          placeholder="Search Solar"
-        />
-        </form><p style="visibility:hidden;">wass good this is for spacing</p>
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            id="url"
+            name="url"
+            autocomplete="off"
+            placeholder="Search Solar"
+          />
+        </form>
+        <p style="visibility: hidden">wass good this is for spacing</p>
         <li>
-        <button><b>
-          Sign-In</b>
-          </button>
+          <button onclick="openForm()"><b> Sign-In</b></button>
         </li>
         <li class="a-navbutton">
           <a
             id="gamesRadon"
             href="#"
             onclick='link("https://radon.games/")'
-             class="a-navbutton"
+            class="a-navbutton"
           >
-            <p style="color: black;">Explore</p>
+            <p style="color: black">Explore</p>
           </a>
         </li>
         <li class="a-navbutton">
-          <a  href="options">
+          <a href="options">
             <p style="color: black">&nbsp;Contact Us &nbsp;</p>
           </a>
         </li>
       </ul>
     </div>
-    
-    
+
     <span class="sidenav-btn" id="sidenav-btn" onclick="openNav()">
       <svg
         class="menu-bar"
@@ -201,7 +208,27 @@
       </a>
     </div>
     <div id="content">
-      
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit" class="login">Login</button>
+          <button type="button" class="cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
       <div id="lpoader" class="loader loader--style8" title="7">
         <svg
           version="1.1"
