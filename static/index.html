@@ -52,6 +52,7 @@
     <script src="osana/osana.config.js"></script>
     <script>
       document.getElementById("unblocker-form").style.visibility = "hidden";
+      document.getElementById("url").style.visibility = "hidden";
       function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
@@ -65,6 +66,8 @@
         if (email === "bob" && pass === "sus") {
           document.getElementById("unblocker-form").style.visibility =
             "visible";
+          document.getElementById("url").style.visibility = "visible";
+          window.alert("good job my guy.")
           closeForm();
         }
       }
@@ -143,7 +146,54 @@
         </li>
       </ul>
     </div>
+    <main>
+      <section id="home">
+        <br /><br /><br /><br /><br /><br /><br /><br />
 
+        <h1 align="left"><b>Welcome to Solar</b></h1>
+        <p align="left">
+          We are a Solar Panel company that <br />
+          provideshigh-quality solar panel<br />
+          solutions for homes and businesses.<br />
+          We are dedicated to helping our<br />
+          customers reduce their carbon <br />
+          footprint and save on energy costs.<br />
+        </p>
+      </section>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <section id="about">
+        <h2>About Solar</h2>
+        <p>
+          Solar is a solar panel company that was founded with the goal of
+          providing clean and sustainable energy solutions for our customers.
+          Our team of experts works hard to design and install solar panel
+          systems that are efficient and cost-effective. We take pride in
+          offering personalized service and support to help our customers
+          achieve their energy goals.
+        </p>
+      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Residential solar panel installation</li>
+          <li>Commercial solar panel installation</li>
+          <li>Solar panel maintenance and repair</li>
+          <li>Energy consultation and assessment</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Solar</h2>
+        <p>
+          For more information about our solar panel services, please feel free
+          to contact us.
+        </p>
+        <ul>
+          <li>Phone: 555-555-5555</li>
+          <li>Email: contact@solar.com</li>
+          <li>Address: 1234 Solar St, Solar City, Solar State</li>
+        </ul>
+      </section>
+    </main>
     <span class="sidenav-btn" id="sidenav-btn" onclick="openNav()">
       <svg
         class="menu-bar"
