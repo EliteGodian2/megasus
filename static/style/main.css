@@ -12,7 +12,13 @@
   right: 28px;
   width: 280px;
 }
-
+#solarinfo {
+  margin-left: 15px;
+}
+#solarsec {
+  width: 100%;
+  height: 100px;
+}
 /* The popup form - hidden by default */
 .form-popup {
   display: none;

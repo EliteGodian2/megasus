@@ -51,12 +51,15 @@
     <script src="osana/osana.bundle.js"></script>
     <script src="osana/osana.config.js"></script>
     <script>
-      var x = document.getElementById("formthingie");
-      if (x.style.visibility === "hidden") {
-        x.style.visibility = "visible";
-      } else {
-        x.style.visibility = "hidden";
+      function switchVisibility() {
+        var x = document.getElementById("formthingie");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
       }
+      switchVisibility();
       function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
@@ -68,7 +71,7 @@
         var email = document.getElementById("emailthing").value;
         var pass = document.getElementById("passwordthing").value;
         if (email === "bob" && pass === "sus") {
-          document.getElementById("formthingie").style.visibility = "visible";
+          switchVisibility();
           window.alert("good job my guy.");
           closeForm();
         }
@@ -150,8 +153,9 @@
         </li>
       </ul>
     </div>
-    <main>
-      <section id="home">
+
+    <div id="solarsec">
+      <section id="solarinfo">
         <br /><br /><br /><br /><br /><br /><br /><br />
 
         <h1 align="left"><b>Welcome to Solar</b></h1>
@@ -164,40 +168,40 @@
           footprint and save on energy costs.<br />
         </p>
       </section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <section id="about">
-        <h2>About Solar</h2>
-        <p>
-          Solar is a solar panel company that was founded with the goal of<br>
-          providing clean and sustainable energy solutions for our customers.<br>
-          Our team of experts works hard to design and install solar panel<br>
-          systems that are efficient and cost-effective. We take pride in<br>
-          offering personalized service and support to help our customers<br>
-          achieve their energy goals.
-        </p>
-      </section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Residential solar panel installation</li>
-          <li>Commercial solar panel installation</li>
-          <li>Solar panel maintenance and repair</li>
-          <li>Energy consultation and assessment</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Solar</h2>
-        <p>
-          For more information about our solar panel services, please feel free
-          to contact us.
-        </p>
-        <ul>
-          <li>Phone: 555-555-5555</li>
-          <li>Email: contact@solar.com</li>
-          <li>Address: 1234 Solar St, Solar City, Solar State</li>
-        </ul>
-      </section>
-    </main>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section id="about">
+      <h2>About Solar</h2>
+      <p>
+        Solar is a solar panel company that was founded with the goal of<br />
+        providing clean and sustainable energy solutions for our customers.<br />
+        Our team of experts works hard to design and install solar panel<br />
+        systems that are efficient and cost-effective. We take pride in<br />
+        offering personalized service and support to help our customers<br />
+        achieve their energy goals.
+      </p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Residential solar panel installation</li>
+        <li>Commercial solar panel installation</li>
+        <li>Solar panel maintenance and repair</li>
+        <li>Energy consultation and assessment</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Solar</h2>
+      <p>
+        For more information about our solar panel services, please feel free to
+        contact us.
+      </p>
+      <ul>
+        <li>Phone: 555-555-5555</li>
+        <li>Email: contact@solar.com</li>
+        <li>Address: 1234 Solar St, Solar City, Solar State</li>
+      </ul>
+    </section>
     <span class="sidenav-btn" id="sidenav-btn" onclick="openNav()">
       <svg
         class="menu-bar"
